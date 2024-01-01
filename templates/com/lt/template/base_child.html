@@ -1,0 +1,16 @@
+{% extends 'com/lt/template/base.html' %}
+
+
+{% block extbody %}
+    {#super() 显示父block块的内容#}
+    {{ super() }}
+    {{ person("李白",21) }}
+
+    <div>basechild</div>
+    {% include 'com/lt/template/include.html' %}
+    {% include 'com/lt/template/template.html' %}
+{% endblock %}
+
+{% macro person(name,age) %}
+    <div>{{ name }} {{ age }}</div>
+{% endmacro %}

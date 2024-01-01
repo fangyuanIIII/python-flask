@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{#使用默认函数    或者自定义函数#}
+{#在{{ |func}}   用参数 | 函数   形式使用函数   #}
+{{ "hello world" | upper }}
+
+{#使用app.py自定义的过滤器函数step_#}
+{{ list | step_ }}
+
+</body>
+</html>
