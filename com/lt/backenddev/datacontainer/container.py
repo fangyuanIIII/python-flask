@@ -5,9 +5,11 @@
 集合set      非序列类型
 字典dict     非序列类型
 
-支出下表索引    list tuple str
+支出下标索引    list tuple str
 支持重复元素    list tuple str
-支持修改       list tuple dict
+
+#可变数据类型指的是可以在原地修改（即不创建新的对象）的数据类型
+可变       list set dict
 
 通用函数
 len()  max()  min()  sorted( 集合,reverse=True)排序
